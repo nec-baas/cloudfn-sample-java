@@ -1,4 +1,5 @@
 <assembly>
+    <!-- ユーザコードのjarを作成する -->
     <id>usercode-with-dependencies</id>
     <formats>
         <format>jar</format>
