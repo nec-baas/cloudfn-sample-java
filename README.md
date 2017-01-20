@@ -1,4 +1,4 @@
-customlogic-sample-java
+cloudfn-sample-java
 ===============
 
 # 利用方法

@@ -1,6 +1,6 @@
-package com.nec.baas.customlogic.sample;
+package com.nec.baas.cloudfn.sample;
 
-import com.nec.baas.customlogic.sdk.Context;
+import com.nec.baas.cloudfn.sdk.Context;
 
 /**
  * Hello world!
