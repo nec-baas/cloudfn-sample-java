@@ -1,0 +1,9 @@
+sayHello:
+  code:
+    bucket: CUSTOM_CODE
+    file: hello-1.0-SNAPSHOT-cloudfn.tar.gz
+  handler: com.nec.baas.cloudfn.sample.Hello::sayHello
+  env:
+    spec: java8
+    timeout: 60
+    memorySize: 128
