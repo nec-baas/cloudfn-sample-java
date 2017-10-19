@@ -19,17 +19,17 @@
             <!-- モバイルバックエンド基盤クラウドファンクションのSDK(必須) -->
             <groupId>com.nec.baas.cloudfn.java-logic-server</groupId>
             <artifactId>sdk</artifactId>
-            <version>6.0.0-SNAPSHOT</version>
+            <version>6.5.0</version>
             <scope>system</scope>
-            <systemPath>${project.basedir}/libs/NebulaCloudFunctionsSdk-6.0.0-SNAPSHOT.jar</systemPath>
+            <systemPath>${project.basedir}/libs/NebulaCloudFunctionsSdk-6.5.0.jar</systemPath>
         </dependency>
         <dependency>
             <!-- モバイルバックエンド基盤Java用SDK(必須) -->
             <groupId>com.nec.baas</groupId>
             <artifactId>nebula-sdk-core</artifactId>
-            <version>5.0.0</version>
+            <version>6.5.0</version>
             <scope>system</scope>
-            <systemPath>${project.basedir}/libs/NebulaClientCore-5.0.0.jar</systemPath>
+            <systemPath>${project.basedir}/libs/NebulaClientCore-6.5.0.jar</systemPath>
         </dependency>
 
         <!-- モバイルバックエンド基盤 Java SDK 用依存関係 -->
