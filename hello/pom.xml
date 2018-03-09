@@ -4,31 +4,34 @@
 
     <groupId>com.nec.baas.cloudfn.sample</groupId>
     <artifactId>hello</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <version>7.0.0-SNAPSHOT</version>
     <packaging>jar</packaging>
 
     <name>hello</name>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+
+        <baas-client.version>7.0.0</baas-client.version>
+        <cloudfn-sdk.version>7.0.0</cloudfn-sdk.version>
     </properties>
 
     <dependencies>
         <dependency>
             <!-- モバイルバックエンド基盤クラウドファンクションのSDK(必須) -->
-            <groupId>com.nec.baas.cloudfn.java-logic-server</groupId>
-            <artifactId>sdk</artifactId>
-            <version>6.5.0</version>
+            <groupId>com.nec.baas.cloudfn</groupId>
+            <artifactId>cloudfn-sdk</artifactId>
+            <version>${cloudfn-sdk.version}</version>
             <scope>system</scope>
-            <systemPath>${project.basedir}/libs/NebulaCloudFunctionsSdk-6.5.0.jar</systemPath>
+            <systemPath>${project.basedir}/libs/cloudfn-sdk-${cloudfn-sdk.version}.jar</systemPath>
         </dependency>
         <dependency>
             <!-- モバイルバックエンド基盤Java用SDK(必須) -->
             <groupId>com.nec.baas</groupId>
-            <artifactId>nebula-sdk-core</artifactId>
-            <version>6.5.0</version>
+            <artifactId>baas-client-core</artifactId>
+            <version>${baas-client.version}</version>
             <scope>system</scope>
-            <systemPath>${project.basedir}/libs/NebulaClientCore-6.5.0.jar</systemPath>
+            <systemPath>${project.basedir}/libs/baas-client-core-${baas-client.version}.jar</systemPath>
         </dependency>
 
         <!-- モバイルバックエンド基盤 Java SDK 用依存関係 -->
@@ -53,6 +56,16 @@
 
     <build>
         <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>1.8</source>
+                    <target>1.8</target>
+                    <encoding>${project.build.sourceEncoding}</encoding>
+                </configuration>
+            </plugin>
+
             <plugin>
                 <artifactId>maven-assembly-plugin</artifactId>
                 <version>2.4.1</version>
