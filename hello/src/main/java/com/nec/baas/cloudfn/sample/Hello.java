@@ -8,7 +8,7 @@ import java.util.Map;
  */
 public class Hello {
     public static void sayHello(Map<String, Object> event, Context context) {
-        String name = "Jhon Doe";
+        String name = "John Doe";
         if (context.clientContext().queryParams().containsKey("name")) {
             name = context.clientContext().queryParams().get("name").get(0);
         }
