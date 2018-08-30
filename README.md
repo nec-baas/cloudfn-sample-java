@@ -1,5 +1,5 @@
 cloudfn-sample-java
-===============
+===================
 
 # 利用方法
 
@@ -10,7 +10,7 @@ cloudfn-sample-java
 
 hello/target ディレクトリ以下に、下記のパッケージが作成されます。
 
-    hello-1.0-SNAPSHOT-cloudfn.tar.gz
+    hello-7.0.0-SNAPSHOT-cloudfn.tar.gz
 
 # モバイルバックエンド基盤サーバへのアップロード方法
 
@@ -21,4 +21,4 @@ nebula-cliを予めインストールしておいてください。
 
 nebula_config.jsonが作成されるので、設定を追記してください。
 
-    $ nebula create-code --file target/hello-1.0-SNAPSHOT-cloudfn.tar.gz
+    $ nebula create-code --file target/hello-7.0.0-SNAPSHOT-cloudfn.tar.gz
