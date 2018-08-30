@@ -11,44 +11,16 @@
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-
-        <baas-client.version>7.0.0</baas-client.version>
-        <cloudfn-sdk.version>7.0.0</cloudfn-sdk.version>
+        <cloudfn-sdk.version>7.0.2</cloudfn-sdk.version>
     </properties>
 
     <dependencies>
         <dependency>
             <!-- モバイルバックエンド基盤クラウドファンクションのSDK(必須) -->
-            <groupId>com.nec.baas.cloudfn</groupId>
+            <groupId>com.nec.baas.cloudfn.sdk</groupId>
             <artifactId>cloudfn-sdk</artifactId>
             <version>${cloudfn-sdk.version}</version>
-            <scope>system</scope>
-            <systemPath>${project.basedir}/libs/cloudfn-sdk-${cloudfn-sdk.version}.jar</systemPath>
-        </dependency>
-        <dependency>
-            <!-- モバイルバックエンド基盤Java用SDK(必須) -->
-            <groupId>com.nec.baas</groupId>
-            <artifactId>baas-client-core</artifactId>
-            <version>${baas-client.version}</version>
-            <scope>system</scope>
-            <systemPath>${project.basedir}/libs/baas-client-core-${baas-client.version}.jar</systemPath>
-        </dependency>
-
-        <!-- モバイルバックエンド基盤 Java SDK 用依存関係 -->
-        <dependency>
-            <groupId>com.squareup.okhttp3</groupId>
-            <artifactId>okhttp</artifactId>
-            <version>3.10.0</version>
-        </dependency>
-        <dependency>
-            <groupId>com.fasterxml.jackson.core</groupId>
-            <artifactId>jackson-core</artifactId>
-            <version>2.9.4</version>
-        </dependency>
-        <dependency>
-            <groupId>org.slf4j</groupId>
-            <artifactId>slf4j-api</artifactId>
-            <version>1.7.25</version>
+            <scope>provided</scope>
         </dependency>
 
         <!-- これ以降に必要なdependencyを追加してください -->
