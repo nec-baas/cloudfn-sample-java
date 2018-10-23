@@ -5,7 +5,6 @@ cloudfn-sample-java
 
 下記のように操作することで、ユーザコードのtar.gzパッケージを作成できます
 
-    $ cd hello
     $ mvn verify
 
 hello/target ディレクトリ以下に、下記のパッケージが作成されます。
