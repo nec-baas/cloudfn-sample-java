@@ -4,14 +4,14 @@
 
     <groupId>com.nec.baas.cloudfn.sample</groupId>
     <artifactId>hello</artifactId>
-    <version>7.0.0-SNAPSHOT</version>
+    <version>7.5.0-SNAPSHOT</version>
     <packaging>jar</packaging>
 
     <name>hello</name>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <cloudfn-sdk.version>7.0.2</cloudfn-sdk.version>
+        <cloudfn-sdk.version>7.5.0</cloudfn-sdk.version>
     </properties>
 
     <dependencies>
