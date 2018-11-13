@@ -12,6 +12,7 @@ public class Hello {
         if (context.clientContext().queryParams().containsKey("name")) {
             name = context.clientContext().queryParams().get("name").get(0);
         }
+	context.logger().info("You can use logger.");
         context.succeed("Hello, " + name + "!");
     }
 }
