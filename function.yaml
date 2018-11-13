@@ -4,6 +4,6 @@ sayHello:
     file: hello-7.0.0-SNAPSHOT-cloudfn.tar.gz
   handler: com.nec.baas.cloudfn.sample.Hello::sayHello
   env:
-    spec: java8
+    spec: java
     timeout: 60
     memorySize: 128
