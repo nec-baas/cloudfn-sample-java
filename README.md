@@ -7,7 +7,7 @@ cloudfn-sample-java
 
     $ mvn verify
 
-hello/target ディレクトリ以下に、下記のパッケージが作成されます。
+target ディレクトリ以下に、下記のパッケージが作成されます。
 
     hello-7.5.0-SNAPSHOT-cloudfn.tar.gz
 
